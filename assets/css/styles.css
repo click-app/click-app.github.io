@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Nexa Bold";
+  font-style: bold;
+  font-weight: 400;
+  src: url("/assets/fonts/NexaBold.woff2") format("woff2"),
+    url("/assets/fonts/NexaBold.woff") format("woff");
+}
+
+h1 {
+  font-family: "Nexa Bold";
+}
+
+#landing {
+  background-image: url("/images/sign up (1).svg");
+  color: white;
+}
+
+#clicktitle{
+
+  position: absolute;
+  width: 490px;
+  height: 210px;
+  left: 508px;
+  top: 291px;
+  font-family: "Nexa Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 125px;
+  line-height: 125px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+#joinbutton{
+  color:white;
+}

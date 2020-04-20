@@ -5,6 +5,7 @@
   src: url("/assets/fonts/NexaBold.woff2") format("woff2"),
     url("/assets/fonts/NexaBold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Nexa Light";
   font-style: normal;
@@ -18,24 +19,39 @@ p, h1, h2, h3 {
   font-family: "Nexa Bold", sans-serif;
 }
 
+.center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
 #main {
   background: url("/assets/images/main-bg.svg") no-repeat center center local;
 }
 
-section.full-section {
+section {
+  position: absolute;
   width: 100vw;
-  height: 100vh;
   background-size: cover;
+}
+
+section.full-section {
+  height: 100vh;
+}
+
+section.half-section {
+  height: 50vh;
 }
 
 .title {
   font-size: 125px;
   letter-spacing: 0.05em;
   color: white;
-  position: absolute;
   top: 32%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .subtitle {
@@ -83,7 +99,6 @@ input[type="button"].signup {
 }
 
 #about {
-  position: absolute;
   top: 100vh;
   background: url("/assets/images/about-bg.svg") no-repeat center center local;
 }
@@ -103,12 +118,32 @@ input[type="button"].signup {
 }
 
 .about-container {
+  position: absolute;
+  width: 100%;
+  top: 83%;
   display: flex;
-}
-
-.about-images {
-}
-
-.about-names {
+  justify-content: space-evenly;
   font-size: 40px;
+  text-align: center;
+}
+
+#contact {
+  top: 200vh;
+  background: url("/assets/images/contact-bg.svg") no-repeat center center local;
+  color: white;
+}
+
+.contact-title {
+  top: 27%;
+  font-size: 80px;
+}
+
+.contact-subtitle {
+  top: 54%;
+  font-size: 60px;
+}
+
+.contact-subtitle a {
+  color: inherit;
+  text-decoration: inherit;
 }
